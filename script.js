@@ -41,6 +41,26 @@ console.log(--question);
     console.log(isChecked || !isClose);
 */
 
+let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+ let personalMovieDB = {
+     count: numberOfFilms,
+     movies: {},
+     actors: {},
+     genres: [],
+     private: false,
+ };
+  
+  const lastFilms = prompt("Один из последних Ваших просмотреных фильмов?", ""),
+        appraisal = prompt("На сколько можете оценить его?", ""),
+        lastFilms_2 = prompt("Один из последних Ваших просмотреных фильмов?", ""),
+        appraisal_2 = prompt("На сколько можете оценить его?", "");
+  
+  personalMovieDB.movies[lastFilms] = appraisal;
+  personalMovieDB.movies[lastFilms_2] = appraisal_2;
+
+    console.log(personalMovieDB);
+
 
 
 
